@@ -13,7 +13,7 @@ mongoose.connect(`mongodb://${process.env.USER}:${process.env.PASS}@ds139342.mla
 });
 
 app.use('/users', userController);
-app.use('/api/auth', AuthController);
+app.use('/api/auth', authController);
 
 
 app.listen(port, () => {
